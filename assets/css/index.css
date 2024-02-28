@@ -1,6 +1,11 @@
 a{
     font-size: 14px;
 }
+#header{
+    padding: 0;
+    margin: 0;
+    /* margin: 0; */
+}
 #topline{
     width: 100%;
     height:5vh;
@@ -8,7 +13,11 @@ a{
 }
 #l-items{
     margin-right: 140px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
+
 #donate-button{
     border-radius: 4px;
     height: 29px;
@@ -22,6 +31,8 @@ a{
     color: black;
     /* background-color: #990000; */
     font-family: "Arial", sans-serif;
+    padding: 0;
+    margin: 0;
 }
 .nav-items:hover{
     color: #990000;
@@ -45,19 +56,51 @@ a{
         display:none;
       }
 }
-
-#n-redd{
-    background-color: #990000;
-    width:100%;
-   height:35px;
-}
 #n-logo{
-    height: 49px;
-    width: 49px;
+    height: 40px;
+    width: 40px;
 }
 #n-headd{
-    font-family: Inika;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif,'Inika';
+    /* font-family: Inika; */
+
     font-size: 16px;
+}
+.bdrr{
+    width:10px;
+    /* margin-bottom: 20px; */
+    height: 5px;
+    color: #717071;
+}
+
+.line-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .horizontal-line {
+    margin-top:10px;
+    border-top: 0.5px solid #b9b9b9; /* Adjust color and thickness as needed */
+    width: 80rem; 
+    border-radius: 2rem;
+    margin-bottom: 20px;
+    /* Adjust the width of the line */
+  }
+@media screen and (max-width:1333px){
+    .horizontal-line{
+        width: 70rem;
+    }
+}
+@media screen and (max-width:1105px){
+    .horizontal-line{
+        width: 55rem;
+    }
+}
+@media screen and (max-width:917px){
+    .horizontal-line{
+        width: 40rem;
+    }
 }
 #n-topp{
     display: flex;
@@ -71,20 +114,19 @@ a{
 }
 #n-lft{
     display: flex;
-
     justify-content: center;
     align-items: center;
     /* height: 20px;
     width: 10vh; */
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
-    margin-right:30px;
+    margin-right:60px;
+}
+#alok{
+    font-size: 20px;
 }
 #n-alok{
     text-align: center;
-}
-#alok{
-    font-size: 23px;
 }
 #n-logo-side{
 margin-left:50px;
@@ -92,7 +134,7 @@ display: flex;
 align-items:center;
 justify-content:center;
 gap:10px;
-margin-left: 90px;
+margin-left: 110px;
 }
 #logo-side{
     margin-left:50px;
@@ -118,15 +160,24 @@ margin-left: 90px;
     
 }
 #n-menu{
-    margin-left: 70px;
+    margin-left: 95px;
+   
+}
+.n-mennu{
+    margin-bottom: 7rem;
 }
 .n-links{
-    /* height: 0;
+    height: 0;
     overflow: hidden;
-    transition: var(--transition); */
+    transition:height 0.3s ease ;
 }
 .show-links{
     height: 10rem;
+}
+.windoww{
+    transition: ease;
+    transition-delay: 3s;
+    transition-duration: 4s;
 }
 #dmsg{
     margin-top: 7vh;
@@ -364,3 +415,10 @@ input{
 .ftr-list{
     margin-bottom: 5px;
 }
+@media screen and (max-width:501){
+    
+}
+i{
+    font-size: 20px;
+}
+  
